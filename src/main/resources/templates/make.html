@@ -1,0 +1,26 @@
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Making order page</title>
+    </head>
+    <body>
+        <h1>Making order</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>+</th>
+                    <th>-</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="entry : ${menu.getEntries()}">
+                    <td th:text="${entry.getId()}">-1</td>
+                    <td th:text="${entry.getName()}">null</td>
+                    <td>tmp</td>
+                    <td>tmp</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
